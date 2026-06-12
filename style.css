@@ -1,0 +1,348 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+body{
+    height:100vh;
+    background-color: #f5f5f7;
+}
+.nav{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:0.7rem 3rem;
+    
+    
+}
+.nav a{
+    text-decoration: none;
+    font-size:0.8rem;
+    color:black;
+}
+.nav a:hover{
+    box-shadow:0 2px black;
+}
+#updates{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding:1.5rem;
+    font-size:0.9rem;
+    background-color: #ffffff;
+}
+.sub-header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:0 2rem;
+    margin:1.5rem;
+
+}
+#shop-header{
+    font-size:6rem;
+    font-weight: 600;
+    transition: all 1s ease;
+    display: inline-block;
+    perspective: 1000px;
+    background: linear-gradient(to right, #432eff, #ff1616,rgb(255, 166, 24));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+#shop-header:hover{
+    transform: rotateX(360deg);
+    background: linear-gradient(to right, #ff0808, #d016ff,rgb(255, 193, 24));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+ #shop-sub-header{
+    font-size:1.8rem;
+    font-weight:550;
+   
+}
+.sub-header #shop-header-section{
+    text-align:right;
+}
+.sub-header #shop-header-section a{
+    text-decoration: none;
+    color:#0066cc;   
+}
+.main{
+    margin-top:4rem;
+}
+.card-container{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    width:100%;
+    padding:0 2rem;
+}
+.card{
+    min-width:120px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-left:2rem;
+}
+
+.card img{
+    width:130px;
+    height:130px;
+    object-fit:contain;
+}
+.wrapper{
+    display:flex;
+    align-items:center;
+    margin-top:4rem;
+}
+.card-container::-webkit-scrollbar{
+    display:none;
+}
+.latest-product{
+    margin-top:5rem;
+    margin-left:4rem;
+}
+.latest-product h1,.help-section h1,.experience-section h1{
+    font-weight:500;
+    font-size:1.9rem;
+}
+.latest-card-container .img-card1{
+    background-image: url(./iphone-17-pro.jpg);
+}
+.latest-card-container .img-card2{
+    background-image: url(./macbook-neo.jpg);
+}
+.latest-card-container .img-card3{
+    background-image: url(./watch-bands.jpg);
+}
+.latest-card-container .img-card4{
+    background-image: url(./iphone-17e.jpg);
+}
+.latest-card-container .img-card5{
+    background-image: url(./macbook-pro.jpg);
+}
+.latest-card-container .img-card6{
+    background-image: url(./ipad-air.jpg);
+}
+.h3-on-image{
+    font-size:2rem;
+    font-weight:600;
+
+}
+.white-text{
+    color:white;
+}
+.latest-card-container{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    width:100%;
+    padding:0 2rem;
+    margin-top:1.5rem;
+}
+.latest-card-container::-webkit-scrollbar{
+    display:none;
+}
+.latest-card-container .bg-img{
+    background-repeat: no-repeat;
+    height:500px;
+    width:400px;
+    background-size:cover;
+    border-radius:20px;
+    min-width:400px;
+    transition:0.3s;
+}
+.latest-card-container .bg-img:hover{
+    transform:scale(1.03);
+    box-shadow:5px 5px 5px rgba(0,0,0,0.2);
+}
+.latest-card-container .bg-img div{
+    margin:2rem 0 0 2rem;
+}
+.help-section,.experience-section{
+    margin:3.5rem  0 0 4rem;
+}
+.help-card div,.exp-card div{
+    margin:1.5rem 0 0 2rem;
+}
+.help-card div span{
+    font-size:0.8rem;
+    font-weight:600;
+}
+.help-card-container .card1{
+    background-image:url(./specialist-video.jpg);
+}
+.help-card-container .card2{
+    background-image:url(./earth-day-specialist-help.jpg);
+}
+.help-card-container .card3{
+    background-image:url(./taa-ai.jpg);
+}
+.help-card-container .card4{
+    background-image:url(./taa.jpg);
+}
+.help-card-container .card5{
+    background-image:url(./business.jpg);
+}
+.help-card-container .card6{
+    background-image:url(./personal-setup.jpg);
+}
+.help-card-container,.experience-card-container{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    width:100%;
+    padding:0 2rem;
+    margin-top:1.5rem;
+}
+.help-card-container::-webkit-scrollbar{
+    display:none;
+}
+.experience-card-container::-webkit-scrollbar{
+    display:none;
+}
+.help-card-container .help-card,.experience-card-container .exp-card{
+    background-repeat: no-repeat;
+    height:450px;
+    width:400px;
+    background-size:cover;
+    border-radius:20px;
+    min-width:500px;
+}
+.experience-card-container .card1{
+    background-image:url(./apple-intelligence.jpg);
+}
+.experience-card-container .card2{
+    background-image:url(./ontinuity.jpg);
+}
+.experience-card-container .card3{
+    background-image:url(./holiday-gifting.jpg);
+}
+.experience-card-container .card4{
+    background-image:url(./subscriptions.jpg);
+}
+.experience-card-container .card5{
+    background-image:url(./applecare.jpg);
+}
+#h1-gradient{
+    background: linear-gradient(to right, blue, purple, rgb(255, 185, 7));
+    background-clip: text;    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.quick-links{
+    margin:3rem 0 0 4rem;
+}
+.quick-links h1{
+    font-weight:600;
+    font-size:1.9rem;
+}
+.quick-links .btn-container{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    margin-top:1.2rem;
+    transition:0.5s;
+}
+.quick-links .btn-container button:hover{
+    transform:scale(1.1) translate(-2px,-2px);
+    box-shadow:5px 5px 5px rgba(0,0,0,0.3)
+
+}
+.quick-links .btn-container button{
+    text-align:center;
+    height:2.2rem;
+    width:7rem;
+    border:1px solid black;
+    border-radius:1.5rem;
+    font-weight: 400;
+}
+.footer{
+    margin:3rem 0 0 6rem;
+    padding-right:4rem;
+}
+.footer .info{
+    color:#6e6e73;
+    font-size:.75rem;
+    
+}
+.footer .info ul{
+    list-style: none;
+}
+.footer-directory{
+    margin-top:1rem;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);  
+}
+.footer-directory span{
+    font-size:.9rem;
+    font-weight: 500;
+}
+.footer-directory ul{
+    margin:.6rem 0 1rem 0;
+    list-style: none;
+}
+.footer-directory ul li{
+    margin:.5rem 0;
+}
+.footer-directory ul li a{
+    color:#636368;
+    font-size:.8rem;
+    text-decoration: none;
+}
+#helpline{
+    color:#636368;
+    font-size:.8rem;
+    margin:.5rem 0 1.5rem 0;
+}
+#helpline a{
+    color:#0066cc;  
+}
+.legal-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:7rem;
+    height:3rem;
+}
+.legal-section #copyright{
+    color:#636368;
+    font-size:.8rem;   
+}
+.legal-section .links{
+    font-size:.85rem;  
+    display:flex;
+    justify-content: space-between;
+    gap:1rem;
+}
+.legal-section .links a{
+    text-decoration: none;
+    color:#636368;
+}
+.legal-section #region{
+    color:#636368;
+    font-size:.85rem; 
+    text-decoration: none; 
+}
+
+
+
+
+@media (max-width:500px){
+    .nav{
+        flex-direction:column;
+        align-items:center;
+        margin-top:10px;
+    }
+    .nav a{
+        margin-top:0.5rem;
+    }
+}
